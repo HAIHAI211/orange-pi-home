@@ -1,19 +1,19 @@
 # orange-pi-home
 
-## Project setup
-```
-yarn install
-```
+## 记账功能
+- 花销记账
+- 工资记账
+- 股市记账
+- 外快记账
+- 总资产记账
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## 备忘功能
+- 家人身份信息（如身份证号、身份证截图、一寸照 并支持保存到相册）
+- 银行卡、信用卡、医保卡账密
+- 各网站、app账密
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## 习惯观察功能
+- 起床、睡觉时间
+- 各种饮料摄入频率
+- 锻炼频率
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
