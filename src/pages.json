@@ -7,6 +7,12 @@
 			}
 		},
 		{
+			"path": "pages/panel/accounting/cost/cost",
+			"style": {
+				"navigationBarTitleText": "花销"
+			}
+		},
+		{
 			"path": "pages/tabBar/setting/setting",
 			"style": {
 				"navigationBarTitleText": "设置 "
@@ -18,7 +24,7 @@
 		"navigationStyle": "custom",
 		// #endif
 		"pageOrientation": "portrait",
-		"navigationBarTextStyle": "#222222",
+		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "橘子皮之屋",
 		"navigationBarBackgroundColor": "#ffffff",
 		"backgroundColor": "#F8F8F8",

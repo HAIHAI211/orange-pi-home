@@ -29,8 +29,11 @@ export default {
   methods: {
     change(grid, e) {
       const title = grid.title
-      const item = grid.list[e.detail.index]
-      console.log(title, item)
+      const {url} = grid.list[e.detail.index]
+      console.log(title, url)
+      uni.navigateTo({
+         url
+      });
     }
   }
 };

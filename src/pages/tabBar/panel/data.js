@@ -6,7 +6,7 @@ export const GRIDS = [
       {
         id: 0,
         imgSrc: "/static/grid/Buy.png",
-        url: "pages/",
+        url: "/pages/panel/accounting/cost/cost",
         text: "花销",
         desc: "",
         badge: "0",
