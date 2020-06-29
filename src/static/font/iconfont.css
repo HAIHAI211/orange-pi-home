@@ -1,0 +1,96 @@
+@font-face {font-family: "iconfont";
+  src: url('~@/static/font/iconfont.ttf?t=1593347462214') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Database:before {
+  content: "\eb68";
+}
+
+.icon-Folders:before {
+  content: "\eb7d";
+}
+
+.icon-Coins:before {
+  content: "\eb65";
+}
+
+.icon-Credit_Cards:before {
+  content: "\eb67";
+}
+
+.icon-Investment:before {
+  content: "\eb7b";
+}
+
+.icon-Mobile_phone_in_hand:before {
+  content: "\eb7c";
+}
+
+.icon-Bottle_2:before {
+  content: "\eb5a";
+}
+
+.icon-Buy:before {
+  content: "\eb5f";
+}
+
+.icon-Charts_2:before {
+  content: "\eb60";
+}
+
+.icon-Cash_2:before {
+  content: "\eb61";
+}
+
+.icon-Cash:before {
+  content: "\eb62";
+}
+
+.icon-Cog_Wheel:before {
+  content: "\eb63";
+}
+
+.icon-Credit_Card:before {
+  content: "\eb64";
+}
+
+.icon-ID_2:before {
+  content: "\eb70";
+}
+
+.icon-Monney_bag_2:before {
+  content: "\eb83";
+}
+
+.icon-Money_Bag:before {
+  content: "\eb84";
+}
+
+.icon-Return_policy:before {
+  content: "\eb87";
+}
+
+.icon-Strength:before {
+  content: "\eb90";
+}
+
+.icon-Stocks:before {
+  content: "\eb96";
+}
+
+.icon-Stopwatch:before {
+  content: "\eb97";
+}
+
+.icon-Sync:before {
+  content: "\eb9d";
+}
+

@@ -3,7 +3,7 @@
 		{
 			"path": "pages/tabBar/panel/panel",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "橘子皮之屋"
 			}
 		},
 		{
@@ -18,9 +18,9 @@
 		"navigationStyle": "custom",
 		// #endif
 		"pageOrientation": "portrait",
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "#222222",
 		"navigationBarTitleText": "橘子皮之屋",
-		"navigationBarBackgroundColor": "white",
+		"navigationBarBackgroundColor": "#ffffff",
 		"backgroundColor": "#F8F8F8",
 		"backgroundColorTop": "#F4F5F6",
 		"backgroundColorBottom": "#F4F5F6",
@@ -36,14 +36,14 @@
 		"list": [
 			{
 				"pagePath": "pages/tabBar/panel/panel",
-				"iconPath": "static/component.png",
-				"selectedIconPath": "static/componentHL.png",
+				"iconPath": "static/tabbar/folders.png",
+				"selectedIconPath": "static/tabbar/folders@active.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/tabBar/setting/setting",
-				"iconPath": "static/component.png",
-				"selectedIconPath": "static/componentHL.png",
+				"iconPath": "static/tabbar/setting.png",
+				"selectedIconPath": "static/tabbar/setting@active.png",
 				"text": "设置"
 			}
 		]
