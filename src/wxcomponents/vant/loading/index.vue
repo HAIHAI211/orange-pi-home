@@ -1,48 +1,32 @@
 <template>
 <uni-shadow-root class="vant-loading-index"><view :class="'custom-class van-loading '+(vertical ? 'van-loading--vertical' : '')">
-  <view :class="'van-loading__spinner van-loading__spinner--'+(type)" :style="'color: '+(color)+'; width: '+(sizeWithUnit)+'; height: '+(sizeWithUnit)">
-    <view v-for="(item,index) in ('item in 12')" :key="item.index" v-if="type === 'spinner'" class="van-loading__dot"></view>
+  <view :class="'van-loading__spinner van-loading__spinner--'+(type)" :style="'color: '+(color)+'; width: '+(utils.addUnit(size))+'; height: '+(utils.addUnit(size))">
+    <view v-for="(item,index) in (array12)" :key="item.index" v-if="type === 'spinner'" class="van-loading__dot"></view>
   </view>
-  <view class="van-loading__text" :style="'font-size: '+(textSizeWithUnit)+';'">
+  <view class="van-loading__text" :style="'font-size: '+(utils.addUnit(textSize))+';'">
     <slot></slot>
   </view>
 </view></uni-shadow-root>
 </template>
-
+<wxs src="../wxs/utils.wxs" module="utils"></wxs>
 <script>
 
 global['__wxRoute'] = 'vant/loading/index'
 import { VantComponent } from '../common/component';
-import { addUnit } from '../common/utils';
 VantComponent({
-    props: {
-        color: String,
-        vertical: Boolean,
-        type: {
-            type: String,
-            value: 'circular'
-        },
-        size: {
-            type: String,
-            observer: 'setSizeWithUnit'
-        },
-        textSize: {
-            type: String,
-            observer: 'setTextSizeWithUnit'
-        }
+  props: {
+    color: String,
+    vertical: Boolean,
+    type: {
+      type: String,
+      value: 'circular',
     },
-    methods: {
-        setSizeWithUnit(size) {
-            this.setData({
-                sizeWithUnit: addUnit(size)
-            });
-        },
-        setTextSizeWithUnit(size) {
-            this.set({
-                textSizeWithUnit: addUnit(size)
-            });
-        }
-    }
+    size: String,
+    textSize: String,
+  },
+  data: {
+    array12: Array.from({ length: 12 }),
+  },
 });
 export default global['__wxComponents']['vant/loading/index']
 </script>

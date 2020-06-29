@@ -1,12 +1,27 @@
 <template>
   <view>
-    <van-index-bar :index-list="indexList">
-      <van-index-anchor index="1">标题1</van-index-anchor>
+    <van-index-bar :index-list="indexList" highlight-color="#343434">
+      <van-index-anchor index="标题一" />
       <van-cell title="文本" />
       <van-cell title="文本" />
       <van-cell title="文本" />
 
-      <van-index-anchor index="2">标题2</van-index-anchor>
+      <van-index-anchor index="2" />
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+
+      <van-index-anchor index="3" />
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+
+      <van-index-anchor index="4" />
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+
+      <van-index-anchor index="5" />
       <van-cell title="文本" />
       <van-cell title="文本" />
       <van-cell title="文本" />
@@ -18,8 +33,8 @@
 export default {
   data() {
     return {
-      indexList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    }
+      indexList: []
+    };
   }
 };
 </script>

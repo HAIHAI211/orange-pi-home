@@ -9,7 +9,12 @@
 		{
 			"path": "pages/panel/accounting/cost/cost",
 			"style": {
-				"navigationBarTitleText": "花销"
+				"navigationBarTitleText": "花销",
+				"usingComponents": {
+					"van-index-bar": "/wxcomponents/vant/index-bar/index",
+					"van-index-anchor": "/wxcomponents/vant/index-anchor/index",
+					"van-cell": "/wxcomponents/vant/cell/index"
+				}
 			}
 		},
 		{
@@ -20,9 +25,6 @@
 		}
 	],
 	"globalStyle": {
-		// #ifdef MP-360
-		"navigationStyle": "custom",
-		// #endif
 		"pageOrientation": "portrait",
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "橘子皮之屋",
