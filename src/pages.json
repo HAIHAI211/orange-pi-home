@@ -14,6 +14,9 @@
 					"van-index-bar": "/wxcomponents/vant/index-bar/index",
 					"van-index-anchor": "/wxcomponents/vant/index-anchor/index",
 					"van-cell": "/wxcomponents/vant/cell/index"
+				},
+				"mp-weixin": {
+					"navigationStyle": "custom"
 				}
 			}
 		},
@@ -30,11 +33,8 @@
 		"navigationBarTitleText": "橘子皮之屋",
 		"navigationBarBackgroundColor": "#ffffff",
 		"backgroundColor": "#F8F8F8",
-		"backgroundColorTop": "#F4F5F6",
-		"backgroundColorBottom": "#F4F5F6",
-		"mp-360": {
-			"navigationStyle": "custom"
-		}
+		"backgroundColorTop": "#F8F8F8",
+		"backgroundColorBottom": "#F8F8F8"
 	},
 	"tabBar": {
 		"color": "#BEBCBD",
