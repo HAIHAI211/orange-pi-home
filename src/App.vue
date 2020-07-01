@@ -3,16 +3,8 @@ export default {
   onLaunch() {
     uni.getSystemInfo({
       success: (e) => {
-        this.$scope.globalData.statusBar = e.statusBarHeight;
-        // #ifndef MP
-        if (e.platform == "android") {
-          this.$scope.globalData.customBar = e.statusBarHeight + 50;
-        } else {
-          this.$scope.globalData.customBar = e.statusBarHeight + 45;
-        }
-        // #endif
-
         // #ifdef MP-WEIXIN
+        this.$scope.globalData.statusBar = e.statusBarHeight;
         let custom = wx.getMenuButtonBoundingClientRect();
         this.$scope.globalData.customBar =
           custom.bottom + custom.top - e.statusBarHeight;

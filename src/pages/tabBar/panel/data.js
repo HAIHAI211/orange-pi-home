@@ -69,7 +69,7 @@ export const GRIDS = [
   },
   {
     id: 2,
-    title: "习惯",
+    title: "健康",
     list: [
       {
         id: 0,
@@ -91,6 +91,33 @@ export const GRIDS = [
         desc: "时长 | 类型 | 频率",
         badge: "0",
       },
+      {
+        id: 3,
+        imgSrc: "/static/grid/Protein.png",
+        text: "感冒",
+        desc: "严重程度 | 频率",
+        badge: "0",
+      },
+      {
+        id: 4,
+        imgSrc: "/static/grid/Fit_3.png",
+        text: "大姨妈",
+        desc: "周期 | 痛感 | 血量",
+        badge: "0",
+      },
     ],
   },
+  {
+    id: 3,
+    title: "习惯",
+    list: [
+      {
+        id: 0,
+        imgSrc: "/static/grid/Piggybank.png",
+        text: "跬步",
+        desc: "抑冲动消费 攒底仓",
+        badge: "0",
+      }
+    ]
+  }
 ];

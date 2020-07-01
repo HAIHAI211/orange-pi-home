@@ -94,6 +94,7 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5rpx;
   /* padding: 15rpx 0; */
   overflow: hidden;
 }

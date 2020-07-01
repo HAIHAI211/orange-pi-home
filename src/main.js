@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 
-import pageHead from './components/page-head.vue'
-import pageFoot from './components/page-foot.vue'
-import uLink from '@/components/uLink.vue'
 import ophNavBar from './components/oph-nav-bar'
+import ophNavCell from './components/oph-nav-cell'
 
 import store from './store'
 
@@ -18,10 +16,9 @@ Vue.prototype.$backgroundAudioData = {
 }
 Vue.prototype.$adpid = "1111111111"
 
-Vue.component('page-head', pageHead)
-Vue.component('page-foot', pageFoot)
-Vue.component('uLink', uLink)
 Vue.component('oph-nav-bar', ophNavBar)
+Vue.component('oph-nav-cell', ophNavCell)
+
 App.mpType = 'app'
 
 const app = new Vue({
