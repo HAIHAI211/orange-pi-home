@@ -1,6 +1,6 @@
 <template>
   <view class="panel-page">
-    <view v-for="grid in GRIDS" :key="grid.id">
+    <view v-for="grid in types" :key="grid.id">
       <uni-section :title="grid.title" type="line" ></uni-section>
       <view class="example-body">
         <uni-grid :column="3" :highlight="true" @change="change(grid, $event)" :show-border="true" :square="true">
@@ -19,11 +19,11 @@
 </template>
 
 <script>
-import { GRIDS } from "./data";
+import { types } from "@/data/type";
 export default {
   data() {
     return {
-      GRIDS
+      types
     };
   },
   methods: {
