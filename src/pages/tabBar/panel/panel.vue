@@ -1,7 +1,7 @@
 <template>
   <view class="panel-page">
     <view v-for="grid in types" :key="grid.id">
-      <uni-section :title="grid.title" type="line" ></uni-section>
+      <uni-section :title="grid.text" type="line" ></uni-section>
       <view class="example-body">
         <uni-grid :column="3" :highlight="true" @change="change(grid, $event)" :show-border="true" :square="true">
           <uni-grid-item v-for="(item, index) in grid.list" :key="item.id" :index="index">

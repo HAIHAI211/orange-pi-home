@@ -23,7 +23,12 @@
 		{
 			"path": "pages/tabBar/setting/setting",
 			"style": {
-				"navigationBarTitleText": "设置 "
+				"navigationBarTitleText": "设置 ",
+				"usingComponents": {
+					"van-index-bar": "/wxcomponents/vant/index-bar/index",
+					"van-index-anchor": "/wxcomponents/vant/index-anchor/index",
+					"van-cell": "/wxcomponents/vant/cell/index"
+				}
 			}
 		}
 	],

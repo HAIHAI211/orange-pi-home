@@ -1,21 +1,31 @@
 <template>
-  <view>
+  <view class="setting-page">
     <van-index-bar
       :index-list="indexList"
       highlight-color="#343434"
-      :sticky-offset-top="stickyOffsetTop"
     >
-      <block>
-        <van-index-anchor index="标题一" />
-        <van-cell title="文本" is-link />
+      <block v-for="item in settingList" :key="item.id">
+        <van-index-anchor :index="item.text" />
+        <van-cell :title="cell.text" is-link v-for="cell in item.list" :key="cell.id"/>
       </block>
     </van-index-bar>
   </view>
 </template>
 
 <script>
-export default {};
+import { settingList, indexList } from './data'
+export default {
+  data() {
+    return {
+      indexList,
+      settingList
+    }
+  }
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .setting-page{
+    height: 100%;
+  }
 </style>

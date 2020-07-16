@@ -1,7 +1,9 @@
 
 export const pSettings = [
     {
-        id: 'setting-base'
+        id: 'setting-base',
+        text: '基本信息',
+        list: []
     }
 ]
 
